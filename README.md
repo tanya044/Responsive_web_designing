@@ -1,1 +1,1 @@
-# stanford_online_coursera_soln.
+# CHANGE_OF_PLANS
