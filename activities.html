@@ -1,3 +1,68 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="utf-8">
+        <title>EXPERIENCE AND PROJECTS</title>
+        <link rel="stylesheet" href="styles/style.css">
+    </head>
+    <body>
+        <div>
+            <ul class="navBar">
+                <li> <a href="index.html">Home</a></li>
+                <li> <a href="activities.html"> My experiences and projects </a> </li>
+                <li> <a href="contact.html">Contact Me </a> </li>
+            </ul>
+        </div>
+         <div class="leftTwo topTwo rightTwo">
+            
+            <script> 
+            function toggle() {
+                if 
+            }
+            </script>
+            <h2>Courses I have taken <input type="image" id="courses" src="images/button-4.png" onclick="toggle()"> </h2>
+            <div id="coursesList" class="hidden leftTwo">
+                <a href="">Searching for them</a>
+            </div>
+              <script type="text/javascript">
+                function toggle() {
+                    var element = document.getElementById("coursesList");
+                    if (element.style.display== "block") {
+                        element.style.display = "none";
+                    }
+                    else {
+                        element.style.display = "block";
+                    }
+            
+                    var but = document.getElementById("courses")  ;
+                    if (but.src.endsWith("button-4.png")) {
+                        but.src = "images/button-3.png";
+                    }
+                    else {
+                        but.src = "images/button-4.png";
+                    }
+                }
+            </script>
+              <h2>My projects <input type="image" id="projects" src="images/button-4.png" onclick="toggle2()"> </h2>
+            <div id="projectList" class="hidden leftTwo rightTwo">
+                <a href="">Searching for more</a>
+            </div>
+              <script type="text/javascript">
+                function toggle2() {
+                    var element = document.getElementById("projectList");
+                    if (element.style.display== "block") {
+                        element.style.display = "none";
+                    }
+                    else {
+                        element.style.display = "block";
+                    }
+            
+                    var but = document.getElementById("projects")  ;
+                    if (but.src.endsWith("button-4.png")) {
+                        but.src = "images/button-3.png";
+                    }
+                    else {
+                        but.src = "images/button-4.png";
+                    }
+                }
+            </script>
