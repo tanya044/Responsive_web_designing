@@ -66,3 +66,35 @@
                     }
                 }
             </script>
+             <h2>Contests and competitions <input type="image" id="contests" src="images/button-4.png" onclick="toggle3()"></h2>
+             <div id="contestList" class="hidden leftTwo rightTwo">
+                <p>When I was a highschooler, I was really interested in <a href="https://en.wikipedia.org/wiki/Competitive_programming">competitive programming</a>.<br>I plan to work harder and smarter in order to hone my skills.Apart from that I really love the concept and would love to be a part of creating or modifying something, even the slightest would give me utmost satisfaction.</p>
+                
+                <br> 
+            </div>
+              <script type="text/javascript">
+                function toggle3() {
+                    var element = document.getElementById("contestList");
+                    if (element.style.display== "block") {
+                        element.style.display = "none";
+                    }
+                    else {
+                        element.style.display = "block";
+                    }
+            
+                    var but = document.getElementById("contests")  ;
+                    if (but.src.endsWith("button-4.png")) {
+                        but.src = "images/button-3.png";
+                    }
+                    else {
+                        but.src = "images/button-4.png";
+                    }
+                }
+            </script>
+             <p>(Click on the green plus buttons to read more and then the red buttons to close ... )</p>
+        </div>
+        
+        
+        
+    </body>
+</html>
