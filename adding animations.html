@@ -1,29 +1,33 @@
 <style>
-  div {
-    height: 40px;
-    width: 70%;
-    background: black;
+
+  #ball {
+    width: 100px;
+    height: 100px;
     margin: 50px auto;
-    border-radius: 5px;
+    position: relative;
+    border-radius: 50%;
+    background: linear-gradient(
+      35deg,
+      #ccffff,
+      #ffcccc
+    );
+    animation-name: bounce;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
   }
 
-  #rect {
-animation-name:rainbow;
-animation-duration:4s;
+  @keyframes bounce{
+    0% {
+      top: 0px;
+    }
+    50% {
+      top: 249px;
+      width: 130px;
+      height: 70px;
+    }
+    100% {
+      top: 0px;
+    }
   }
-@keyframes rainbow{
-  0%{
-    background-color:blue;
-  }
-  50%{
-    background-color:green;
-  }
-  100%{
-    background-color:yellow;
-  }
-}
-
-
-
 </style>
-<div id="rect"></div>
+<div id="ball"></div>
